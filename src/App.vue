@@ -92,7 +92,7 @@ async function encode() {
     if (!url) return;
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'output.mp4';
+    a.download = 'output.webm';
     a.click();
     URL.revokeObjectURL(url);
     encoding = false;
